@@ -198,7 +198,7 @@ a:active {
 	var m_numOfSeriesSelected = 0;
 	var m_wholeStudySelected = false;
 	var externalReports = false;
-	var externalIcon = "";//"pdficon.gif" or "ext_rep.gif"
+	var externalIcon = "";//"PDFICON.GIF" or "EXT_REP.GIF"
 
 //------------------------
 	var arrPicName = new Array();
@@ -10815,7 +10815,7 @@ a:active {
 			{
 				document.getElementById('tblReportHeadLine'+curStudy).style.width = "354" + 'px';
 				document.getElementById('tblReportHeadLine'+curStudy).style.height = "68" + 'px';
-				document.getElementById('tblReportHeadLine'+curStudy).style.backgroundImage =  "url(big_rprt.gif)";
+				document.getElementById('tblReportHeadLine'+curStudy).style.backgroundImage =  "url(BIG_RPRT.GIF)";
 				document.getElementById('reportHeadLineFont'+curStudy).style.fontSize = "25" + 'px';
 				document.getElementById('tblReportPatientDetails'+curStudy).width="100%" + 'px';
 				
@@ -10871,7 +10871,7 @@ a:active {
 
 		}else{
 			if (shrinkReport[curStudy]){
-				document.getElementById('tblReportHeadLine'+curStudy).style.backgroundImage =  "url(sml_rprt.gif)";
+				document.getElementById('tblReportHeadLine'+curStudy).style.backgroundImage =  "url(SML_RPRT.GIF)";
 				document.getElementById('tblReportHeadLine'+curStudy).style.width = "210" + 'px';
 				document.getElementById('tblReportHeadLine'+curStudy).style.height = "40" + 'px';
 				document.getElementById('reportHeadLineFont'+curStudy).style.fontSize = "14" + 'px';
@@ -10943,7 +10943,7 @@ a:active {
 
 			document.write("<td width='10px' </td>");
 			document.write("<td width='60px' style=\"FONT-WEIGHT: bold; FONT-SIZE: x-large; BACKGROUND-POSITION: center left; BACKGROUND-REPEAT: no-repeat \" height='44px' align='left' valign='center' bgcolor=#FFFFFF>");
-			document.write("<a valign='absmiddle' style=\"FONT-WEIGHT: bold;FONT-SIZE: small;\" ><img src='Mglass.gif' width='12' height='12' border='0' valign='absmiddle'>&nbsp;Launch:</a>");
+			document.write("<a valign='absmiddle' style=\"FONT-WEIGHT: bold;FONT-SIZE: small;\" ><img src='MGLASS.GIF' width='12' height='12' border='0' valign='absmiddle'>&nbsp;Launch:</a>");
 			document.write("</td>");
 			if(showLTBX)
 			{
@@ -11095,7 +11095,7 @@ a:active {
 	{
 		cineState=0;
 		window.clearTimeout(my_timer);
-		document.getElementById('cineImage'+curStudy+'s'+cineSeries).src = "cineplay.jpg";
+		document.getElementById('cineImage'+curStudy+'s'+cineSeries).src = "CINEPLAY.JPG";
 		document.getElementById('cineImage'+curStudy+'s'+cineSeries).title = "Play Cine";
 	}
 	function startCine(seriesNum)
@@ -11104,7 +11104,7 @@ a:active {
 		{
 	   	     cineState=1;
 	  	     cineSeries=seriesNum;
-		     document.getElementById('cineImage'+curStudy+'s'+cineSeries).src = "cinestop.jpg";
+		     document.getElementById('cineImage'+curStudy+'s'+cineSeries).src = "CINESTOP.JPG";
 		     document.getElementById('cineImage'+curStudy+'s'+cineSeries).title = "";
 		     switchImage(cineSeries, 0);
 		     my_timer=window.setTimeout("cineNext()",150);	
@@ -11393,9 +11393,9 @@ a:active {
 				<table width=100% cellpadding=0 cellspacing=0 border=0 ID="Table10">
 				<tr style="BACKGROUND-COLOR: #EA7125">
 					<td style="FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: red;  TEXT-ALIGN: center"><b>?</b></td>
-					<td align=left><img src="topback.gif"></td>
+					<td align=left><img src="TOPBACK.GIF"></td>
 					<td align=right>
-						<a href="javascript:closeHelpMsg()">&nbsp;&nbsp;<img src='close.gif' width='12' height='12' border='1' align='absmiddle'>&nbsp;&nbsp;</a>
+						<a href="javascript:closeHelpMsg()">&nbsp;&nbsp;<img src='CLOSE.GIF' width='12' height='12' border='1' align='absmiddle'>&nbsp;&nbsp;</a>
 					</td>
 				</tr>
 				</table>
@@ -11409,12 +11409,12 @@ a:active {
 		<!-- loading splash div-->
 			<div class="reportBorder" id="divLoading" style="DISPLAY: none;FILTER: Alpha(Opacity=90);POSITION: absolute; BACKGROUND-COLOR: white">
 				<table width=100% cellpadding=0 cellspacing=0 border=0 ID="Table8">
-				<tr bgcolor="EA7125"><td align=left><img src="topback.gif"></td><td align=right>
-					<a href="javascript:closeLoadingSplash()">&nbsp;&nbsp;<img src='close.gif' width='12' height='12' border='1' align='absmiddle'>&nbsp;&nbsp;</a>
+				<tr bgcolor="EA7125"><td align=left><img src="TOPBACK.GIF"></td><td align=right>
+					<a href="javascript:closeLoadingSplash()">&nbsp;&nbsp;<img src='CLOSE.GIF' width='12' height='12' border='1' align='absmiddle'>&nbsp;&nbsp;</a>
 				</td></tr>
 				</table>
 				<table width=100% height="100%" cellpadding=0 cellspacing=0 border=0 ID="Table9" 
-					style="BACKGROUND-POSITION: center 75%; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(loading.gif); BACKGROUND-REPEAT: no-repeat">
+					style="BACKGROUND-POSITION: center 75%; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(LOADING.GIF); BACKGROUND-REPEAT: no-repeat">
 				<tr><td style="FONT-SIZE: xx-large; COLOR: red; TEXT-ALIGN: center" align=center >
 							<b> Loading</b>
 					</td></tr>
@@ -11435,13 +11435,13 @@ a:active {
 						</tr>
 						<!-- FIX TAMIR -->
 						<tr>
-							<td height="24" id="L_image_tab" valign="top" background="LBg.gif" align="left"
+							<td height="24" id="L_image_tab" valign="top" background="LBG.GIF" align="left"
 								scope="row"><span class="L_image">&nbsp;Lossy Image&nbsp;#&nbsp;</span><span class="L_image_bold" id="spnImageNum"></span>
 							</td>
 							<!-- End: Preview Image -->
 							<!-- Start: Reports -->
-							<td height="24" id="enlarge_report_tab" valign="bottom" background="RBg.gif" align="right">
-								<a href="JavaScript:enlargeReport()"><b><u>Enlarge Report</u></b><img src="er.gif" border=0></a>
+							<td height="24" id="enlarge_report_tab" valign="bottom" background="RBG.GIF" align="right">
+								<a href="JavaScript:enlargeReport()"><b><u>Enlarge Report</u></b><img src="ER.GIF" border=0></a>
 							</td>								
 						</tr>
 						<!-- FIX TAMIR -->
@@ -11457,25 +11457,25 @@ a:active {
 															<span id="spanDivReport" style="display: none;">
 																<table width="100%" border="0" cellpadding="0" cellspacing="0" ID="Table5">
 																	<tr bgcolor="#EA7125">
-																		<td nowrap>&nbsp;&nbsp;<script language="JavaScript" type="text/JavaScript">document.write("<a href=\"LinkPage.htm\" target=\"_blank\">"+_institution+"</a> - <span id =\"spanHeaderPName\"></span>&nbsp;&nbsp;<span id =\"spanHeaderPID\"></span>");</script></td>
-																		<td width="1"><img src="HeaderSp.gif" width="1" height="24"></td>
+																		<td nowrap>&nbsp;&nbsp;<script language="JavaScript" type="text/JavaScript">document.write("<a href=\"LINKPAGE.HTM\" target=\"_blank\">"+_institution+"</a> - <span id =\"spanHeaderPName\"></span>&nbsp;&nbsp;<span id =\"spanHeaderPID\"></span>");</script></td>
+																		<td width="1"><img src="HEADERSP.GIF" width="1" height="24"></td>
 																		<td nowrap>&nbsp;
 																			<span id ="spanHeaderPSex"></span>&nbsp;
 																			<span id ="spanAgeTitle"></span>
 																			<span id ="spanHeaderPAge"></span>
 																		<td nowrap>&nbsp;&nbsp;<script language="JavaScript" type="text/JavaScript">document.write(_bpart+" ");</script><span id="spanModReport"></span>&nbsp;<span id="spanStdAccessionReport"></span></td>
-																		<td width="1"><img src="HeaderSp.gif" width="1" height="24"></td>
+																		<td width="1"><img src="HEADERSP.GIF" width="1" height="24"></td>
 																		<td nowrap>&nbsp;&nbsp;<span id="spanDateReport"></span></td>
-																		<td width="1"><img src="HeaderSp.gif" width="1" height="24"></td>
+																		<td width="1"><img src="HEADERSP.GIF" width="1" height="24"></td>
 																		<td nowrap align="right">&nbsp;&nbsp;&nbsp;&nbsp;<img src="CARESTREAM_SMALL.GIF" width="73" height="18" align="absmiddle">
-																			<a href="javascript:CloseAndExit()">&nbsp;&nbsp;<img src='close.gif' width='12' height='12' border='1' align='absmiddle'>&nbsp;&nbsp;</a>
+																			<a href="javascript:CloseAndExit()">&nbsp;&nbsp;<img src='CLOSE.GIF' width='12' height='12' border='1' align='absmiddle'>&nbsp;&nbsp;</a>
 																		</td>
 																		<td nowrap>&nbsp;</td>
 																	</tr>
 																</table>
 																<br>
 																<center id="allImages">
-																	<table cellpadding=0 width="300" height="26" cellspacing=0 border=0 background="all_imgs.gif" ID="Table6"><tr><td align="center"><a href="javascript:enlargeReport();"><b>View Study Images</b></a></td></tr></table>
+																	<table cellpadding=0 width="300" height="26" cellspacing=0 border=0 background="ALL_IMGS.GIF" ID="Table6"><tr><td align="center"><a href="javascript:enlargeReport();"><b>View Study Images</b></a></td></tr></table>
 																</center>
 																<br>
 															</span>
@@ -11491,7 +11491,7 @@ a:active {
 				<td bordercolor="#FFFFFF" valign=top>
 					<script language="JavaScript" type="text/JavaScript">			
 						for (var i=0;i<intStudies;i++){
-						document.write("&nbsp;&nbsp;&nbsp;<img src='SL.gif' width='11' height='15' align='texttop'>&nbsp;&nbsp;");
+						document.write("&nbsp;&nbsp;&nbsp;<img src='SL.GIF' width='11' height='15' align='texttop'>&nbsp;&nbsp;");
 						if(arrStdLinked[i]){
 							document.write("<a href='javascript:switchStudies("+i+")'>");
 						}
@@ -11531,9 +11531,9 @@ var r;
 		if (r > 1)
 		{
 			document.write("<table width=\"100%\"><tr><td align=left>");
-			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:NextReport();\"><b><< PREV REPORT</b></a></td></tr></table></td>");
-			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:PrevReport();\"><b>NEXT REPORT >></b></a></td></tr></table></td></tr></table>");
 			document.write("</td></tr>");
 			document.write("<tr><td>");
@@ -11555,9 +11555,9 @@ var r;
 		if (r > 1)
 		{
 			document.write("<table width=\"100%\"><tr><td align=left>");
-			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:NextReport();\"><b><< PREV REPORT</b></a></td></tr></table></td>");
-			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:PrevReport();\"><b>NEXT REPORT >></b></a></td></tr></table></td></tr></table>");
 			document.write("</td></tr>");
 			document.write("<tr><td>");
@@ -11579,9 +11579,9 @@ var r;
 		if (r > 1)
 		{
 			document.write("<table width=\"100%\"><tr><td align=left>");
-			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:NextReport();\"><b><< PREV REPORT</b></a></td></tr></table></td>");
-			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:PrevReport();\"><b>NEXT REPORT >></b></a></td></tr></table></td></tr></table>");
 			document.write("</td></tr>");
 			document.write("<tr><td>");
@@ -11603,9 +11603,9 @@ var r;
 		if (r > 1)
 		{
 			document.write("<table width=\"100%\"><tr><td align=left>");
-			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:NextReport();\"><b><< PREV REPORT</b></a></td></tr></table></td>");
-			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:PrevReport();\"><b>NEXT REPORT >></b></a></td></tr></table></td></tr></table>");
 			document.write("</td></tr>");
 			document.write("<tr><td>");
@@ -11627,9 +11627,9 @@ var r;
 		if (r > 1)
 		{
 			document.write("<table width=\"100%\"><tr><td align=left>");
-			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:NextReport();\"><b><< PREV REPORT</b></a></td></tr></table></td>");
-			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:PrevReport();\"><b>NEXT REPORT >></b></a></td></tr></table></td></tr></table>");
 			document.write("</td></tr>");
 			document.write("<tr><td>");
@@ -11651,9 +11651,9 @@ var r;
 		if (r > 1)
 		{
 			document.write("<table width=\"100%\"><tr><td align=left>");
-			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<table id='prev_report_"+z+"'  cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:NextReport();\"><b><< PREV REPORT</b></a></td></tr></table></td>");
-			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.gif\" > ");
+			document.write("<td align=right><table id='next_report_"+z+"' style=\"VISIBILITY: hidden\" cellpadding=0 width=\"126\" height=\"26\" cellspacing=0 border=0 background=\"BTN_SM.GIF\" > ");
 			document.write("<tr><td align=\"center\" class=\"scan_name\"><a href=\"javascript:PrevReport();\"><b>NEXT REPORT >></b></a></td></tr></table></td></tr></table>");
 			document.write("</td></tr>");
 			document.write("<tr><td>");
@@ -11682,15 +11682,15 @@ var r;
 					<!-- Header Start -->
 					<table width="100%" border="0" cellpadding="0" cellspacing="0" ID="Table1">
 						<tr height="18">
-							<td nowrap colspan="2" bgcolor="#EA7125" >&nbsp;&nbsp;<script language="JavaScript" type="text/JavaScript">document.write("<a href=\"LinkPage.htm\" target=\"_blank\">"+_institution+"</a>");</script></td>
+							<td nowrap colspan="2" bgcolor="#EA7125" >&nbsp;&nbsp;<script language="JavaScript" type="text/JavaScript">document.write("<a href=\"LINKPAGE.HTM\" target=\"_blank\">"+_institution+"</a>");</script></td>
 
 							<td bgcolor=#FFFFFF nowrap align="right" rowspan="2" width ='12'><img src="CARESTREAM_LOGO.GIF"  align="absmiddle"></td>
-							<td bgcolor="#EA7125" width ="20"><a href="javascript:CloseAndExit()"><img src='close.gif' width='12' height='12' border='1' align='absmiddle'></a></td>
+							<td bgcolor="#EA7125" width ="20"><a href="javascript:CloseAndExit()"><img src='CLOSE.GIF' width='12' height='12' border='1' align='absmiddle'></a></td>
 							
 						</tr>
 						<tr height="21">
 							<td bgcolor=#FFFFFF  >&nbsp;<span id="spanStdPName"></span>&nbsp;<span id="spanStdPID"></span></td>
-							<td  bgcolor=#FFFFFF align="right"><a id="stdExplorer" href="javascript:switchStudies(-1)">[<img src='Mglass.gif' width='12' height='10' border='0' align='absmiddle'>&nbsp;Studies Explorer]</a></td>
+							<td  bgcolor=#FFFFFF align="right"><a id="stdExplorer" href="javascript:switchStudies(-1)">[<img src='MGLASS.GIF' width='12' height='10' border='0' align='absmiddle'>&nbsp;Studies Explorer]</a></td>
 							<td bgcolor="#EA7125"></td>
 						</tr>
 					</table>
@@ -11760,12 +11760,12 @@ var r;
 										document.write("<td width='18' rowspan='"+(Math.ceil(stdSeriesImgNum / screenRes)+1)+"'  nowrap >");
 										document.write("<table width='18' border='0' cellspacing='0' cellpadding='0'>");
 										document.write("<tr><td height='16'></td></tr>");
-										document.write("<tr><td height='26' align='center'><a href=\"javascript:cine("+i+")\"><img title=\"Play Cine\" id='cineImage" + stdNum+"s"+i + "' border='0' src='cineplay.jpg'> </a></td></tr>");
+										document.write("<tr><td height='26' align='center'><a href=\"javascript:cine("+i+")\"><img title=\"Play Cine\" id='cineImage" + stdNum+"s"+i + "' border='0' src='CINEPLAY.JPG'> </a></td></tr>");
 										imgShow=false;
 
 										for (z=0;z<Math.ceil(stdSeriesImgNum / screenRes)-1 ;z++){
 											if (imgShow)
-												document.write("<tr><td height='41' align='right' valign=top><img src='LArrow.gif' width='16' height='41'>&nbsp;</td></tr>");
+												document.write("<tr><td height='41' align='right' valign=top><img src='LARROW.GIF' width='16' height='41'>&nbsp;</td></tr>");
 											else
 												document.write("<tr><td height='34'>&nbsp;</td></tr>");
 												
@@ -11776,7 +11776,7 @@ var r;
 										document.write("</td>");
 									}
 									else
-										document.write("<td width='18' rowspan='2' nowrap>&nbsp;<a href=\"javascript:cine("+i+")\"><img title=\"Play Cine\" id='cineImage" + stdNum+"s"+i + "' border='0' src=\"cineplay.jpg\"> </a></td>");
+										document.write("<td width='18' rowspan='2' nowrap>&nbsp;<a href=\"javascript:cine("+i+")\"><img title=\"Play Cine\" id='cineImage" + stdNum+"s"+i + "' border='0' src=\"CINEPLAY.JPG\"> </a></td>");
 									document.write("<td height='16' valign='middle' nowrap>");
 
 									if (!isSummary && (showMPT || showLTBX) && nav)
@@ -11802,7 +11802,7 @@ var r;
 										}
 										for (z=0;z<Math.ceil(stdSeriesImgNum / screenRes)-1 ;z++){
 											if (imgShow)
-												document.write("<tr><td height='41' valign=top><img src='RArrow.gif' width='16' height='41'>&nbsp;</td></tr>");
+												document.write("<tr><td height='41' valign=top><img src='RARROW.GIF' width='16' height='41'>&nbsp;</td></tr>");
 											else
 												document.write("<tr><td height='34'>&nbsp;</td></tr>");
 												
